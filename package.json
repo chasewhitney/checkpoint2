@@ -17,7 +17,15 @@
   "author": "PrimeAcademy",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.15.2",
-    "express": "^4.14.0"
-  }
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PrimeAcademy/Antares_CodeChallenge_2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/PrimeAcademy/Antares_CodeChallenge_2/issues"
+  },
+  "homepage": "https://github.com/PrimeAcademy/Antares_CodeChallenge_2#readme"
 }

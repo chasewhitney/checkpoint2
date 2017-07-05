@@ -37,6 +37,18 @@ jokes = [
   }
 ];
 
+app.get("/getjokes", function(req, res){
+  console.log('received GET request for jokes');
+  res.send(jokes);
+});
+
+app.post("/addjoke", function(req, res){
+  var sentJoke = req.body;
+  //console.log('received POST request to add joke: ' + sentJoke);
+  jokes.push(sentJoke);
+  res.send({message: "Added joke to list"});
+});
+
 // server back static files
 app.get("/*", function(req, res) {
   var file = req.params[0] || "/views/index.html";
